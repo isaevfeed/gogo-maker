@@ -1,0 +1,7 @@
+reps:
+  - name: Best HTTP server
+    url: https://github.com/isaevfeed/golang-http-server-template.git
+    type: http-server
+  - name: Best gRPC server
+    url: https://github.com/isaevfeed/golang-rpc-server-template.git
+    type: grpc-server
