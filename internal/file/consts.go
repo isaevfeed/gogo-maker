@@ -3,6 +3,6 @@ package file
 const (
 	winPath = "C://"
 
-	cfgDirName          = ".go-helper"
+	cfgDirName          = ".gogo-maker"
 	cfgOriginalFileName = "config.yaml"
 )

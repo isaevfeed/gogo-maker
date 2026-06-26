@@ -50,7 +50,7 @@ func (a *App) Run() error {
 
 func (a *App) handleCreateCommand(args []string) error {
 	if len(args) < 4 {
-		a.log.Info("Usage: go-helper create <project-type> <name> [destination-dir]")
+		a.log.Info("Usage: gogo-maker create <project-type> <name> [destination-dir]")
 		a.console.ListAvailableProjects()
 		return errors.New("wrong number of arguments")
 	}
@@ -73,17 +73,17 @@ func (a *App) handleCreateCommand(args []string) error {
 }
 
 func (a *App) logCommands() {
-	a.log.Commands("go-helper CLI", []logger.CommandInfo{
+	a.log.Commands("gogo-maker CLI", []logger.CommandInfo{
 		{
 			Cmd:  "init",
-			Desc: "Initialize config file in ~/.go-helper",
+			Desc: "Initialize config file in ~/.gogo-maker",
 		},
 		{
 			Cmd:  "create <type> <name> [dir]",
 			Desc: "Create project from template",
 			Examples: []string{
-				"go-helper create http-server my-api",
-				"go-helper create http-server my-api ./projects",
+				"gogo-maker create http-server my-api",
+				"gogo-maker create http-server my-api ./projects",
 			},
 		},
 	})

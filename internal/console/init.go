@@ -5,7 +5,7 @@ import (
 )
 
 func (c *Console) Init() error {
-	c.log.Title("Initializing go-helper")
+	c.log.Title("Initializing gogo-maker")
 
 	if err := c.file.Create(); err != nil {
 		return fmt.Errorf("file.Create: %w", err)

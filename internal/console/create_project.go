@@ -39,7 +39,7 @@ func (c *Console) CreateProject(params CreateProjectParams) error {
 	}
 
 	// Clone repo to temp directory first
-	tempDir, err := os.MkdirTemp("", "go-helper-clone-*")
+	tempDir, err := os.MkdirTemp("", "gogo-maker-clone-*")
 	if err != nil {
 		return fmt.Errorf("os.MkdirTemp: %w", err)
 	}

@@ -1,4 +1,4 @@
-# Go Helper
+# Gogo Maker
 
 CLI утилита для быстрого создания Go-проектов из шаблонов.
 
@@ -12,7 +12,13 @@ CLI утилита для быстрого создания Go-проектов 
 ## Установка
 
 ```bash
-go build -o go-helper ./cmd/go-helper
+make build
+```
+
+или
+
+```bash
+go build -o gogo-maker ./cmd/gogo-maker
 ```
 
 ## Использование
@@ -22,15 +28,15 @@ go build -o go-helper ./cmd/go-helper
 При первом запуске необходимо инициализировать конфигурационный файл:
 
 ```bash
-go-helper init
+gogo-maker init
 ```
 
-Конфиг будет создан в директории `~/.go-helper/config.yaml`. Отредактируйте его, чтобы добавить свои шаблоны проектов.
+Конфиг будет создан в директории `~/.gogo-maker/config.yaml`. Отредактируйте его, чтобы добавить свои шаблоны проектов.
 
 ### Создание проекта
 
 ```bash
-go-helper create <тип> <имя> [директория]
+gogo-maker create <тип> <имя> [директория]
 ```
 
 **Параметры:**
@@ -42,15 +48,15 @@ go-helper create <тип> <имя> [директория]
 
 ```bash
 # Создать HTTP-сервер с именем my-api в текущей директории
-go-helper create http-server my-api
+gogo-maker create http-server my-api
 
 # Создать проект в указанной директории
-go-helper create http-server my-api ./projects
+gogo-maker create http-server my-api ./projects
 ```
 
 ## Конфигурация
 
-Конфигурационный файл `~/.go-helper/config.yaml`:
+Конфигурационный файл `~/.gogo-maker/config.yaml`:
 
 ```yaml
 reps:

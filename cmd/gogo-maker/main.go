@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gogo-maker/cmd/go-helper/service_provider"
+	"gogo-maker/cmd/gogo-maker/service_provider"
 	"gogo-maker/internal/config"
 	"gogo-maker/internal/logger"
 	"gogo-maker/internal/models"
